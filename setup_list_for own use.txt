@@ -1,0 +1,25 @@
+This is a list of things to change before using this django project template.
+
+Change base folder name
+Change name of folder containing setup.py
+
+Change base template
+Change Homepage
+
+Change /static/images/favicon-16x16.png
+
+Change DeafultWebsiteName in navbar of /templates/_base.html to the name of your site
+
+Change Site Display name and Domain Name in admin to match the name of your site
+
+Set up your email, and change the settings to match it:
+Comment out the EMAIL_BACKEND which goes via the console
+Uncomment EMAIL_BACKEND which goes via smtp
+Uncomment and change EMAIL_HOST, EMAIL_HOST_USER, EMAIL_PORT
+Uncomment EMAIL_HOST_PASSWORD
+Create a file in the base directory called .env, and put in it the following (no quotes):
+DJANGO_EMAIL_HOST_PASSWORD=???? ???? ???? ????
+
+Change title in _base.html and home.html from Default Django Setup to your sites name
+
+Change admin url and template
