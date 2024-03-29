@@ -21,5 +21,9 @@ WORKDIR /code
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
+# https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html#rule-2-set-a-user
+RUN groupadd -r myuser && useradd -r -g myuser myuser
+USER myuser
+
 # Copy project
 COPY . .
