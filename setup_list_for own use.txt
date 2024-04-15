@@ -8,9 +8,13 @@ Change Homepage
 
 Change /static/images/favicon-16x16.png
 
+Run manage.py makemigrations
+Run manage.py migrate
+Make a new superuser
+
 Change DeafultWebsiteName in navbar of /templates/_base.html to the name of your site
 
-Change Site Display name and Domain Name in admin to match the name of your site
+Change Site Display Name (with spaces) and Domain Name (.com) in admin to match the name of your site
 
 Set up your email, and change the settings to match it:
 Comment out the EMAIL_BACKEND which goes via the console
@@ -23,3 +27,7 @@ DJANGO_EMAIL_HOST_PASSWORD=???? ???? ???? ????
 Change title in _base.html and home.html from Default Django Setup to your sites name
 
 Change admin url and template
+
+Create a new docker-compose-prod.yml file
+Change the secret key in docker-compose-prod.yml
+
